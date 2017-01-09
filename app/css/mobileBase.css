@@ -1,7 +1,9 @@
 
 
 @media screen and (max-width: 1024) {
- 
+ body {
+  background-color: red;
+ }
 }
 
 
