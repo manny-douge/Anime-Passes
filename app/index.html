@@ -11,9 +11,9 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.0/css/hover.css" rel="stylesheet" />
     <link href="css/base.css" rel="stylesheet" /> <!--base styles for desktop -->
-    <!-- <link href="css/mobileBase.css" rel="stylesheet" /> --> <!--mobile version of base -->
+    <link href="css/mobileBase.css" rel="stylesheet" /><!--mobile version of base
 </head>
-<!-- Nav tag encapsulates entire nav bar -->
+<!- Nav tag encapsulates entire nav bar -->
 <body>
   <nav class="navbar navbar-fixed-top navbar-inverse" id="nav">
     <!-- Button that allows for collapsing views rendered far right (is hidden with
@@ -50,14 +50,37 @@
   </div>
   <div class="col-md-12">
       <h4>Anime Passes seeks to ease the hassle of finding a Crunchyroll Guest
-         Pass, whether you're someone who's subscriptions has run out or someone
+         Pass, whether you're someone who's subscription has run out or someone
           just wanting to get their hands on an account.
       </h4>
   </div>
-  <div class="col-md-10" id="main-content">
-  <p>
-    Here am I
-  </p>
+  <!-- Box encloses content with 5-2-5 column widths. 2 being the divider -->
+  <div class="col-md-10 col-xs-10 row" id="main-content">
+    <!-- Donate side -->
+    <div class="col-md-5 col-xs-12 mc-item text-center" id="donate">
+      <p>All Guest Passes be verified for authenticity upon submission.</p>
+      <p>Don't worry about submitting passes you're unsure about <b>:-)</b>.</p>
+      <input id="donate-input" placeholder="Guest Pass Code" />
+      <div class="btn mc-btn hvr-grow">
+        Donate
+      </div>
+    </div>
+    <div class="col-md-2 col-xs-12">
+      <div id="divider"></div>
+    </div>
+    <!-- Request side -->
+    <div class="col-md-5 col-xs-12 mc-item">
+      <p>Anime Passes is supported by the <b>Anime and Crunchyroll communities</b>, all
+      guest passes given have been donated by another user.</p>
+       <p>
+         As such, there is a 48 hour restriction after each successful acquisition
+         of a Guest Pass.
+       </p>
+      <p><b>Please be respectful</b>.</p>
+      <div class="btn mc-btn hvr-grow">
+        Request
+      </div>
+    </div>
   </div>
 </div>
 

@@ -1,8 +1,25 @@
+@media screen and (max-width: 768px)
+{
+  #main-content
+  {
+    height: auto;
+  }
+  .mc-item
+  {
+    width: auto;
+  }
+  #divider
+  {
+    width: 190px;
+    height: 2px;
+    margin-bottom: 30px;
+  }
+  #donate
+  {
+    width: 100%;
+  }
+  body
+  {
 
-
-@media screen and (max-width: 1024) {
- 
+  }
 }
-
-
-
