@@ -1,4 +1,4 @@
-/* Hides the collapsing links until mobile resolution */
+/* /* Hides the collapsing links until mobile resolution */
 @media screen and (min-width: 776px)
 {
   #links
@@ -45,3 +45,4 @@
     transform: scale(.8);
   }
 }
+*/

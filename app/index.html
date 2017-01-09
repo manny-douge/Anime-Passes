@@ -10,35 +10,44 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.0/css/hover.css" rel="stylesheet" />
     <link href="css/base.css" rel="stylesheet" /> <!--base styles for desktop -->
-    <link href="css/mobileBase.css" rel="stylesheet" /> <!--mobile version of base -->
+    <!-- <link href="css/mobileBase.css" rel="stylesheet" /> --> <!--mobile version of base -->
 </head>
 <!-- Nav tag encapsulates entire nav bar -->
-<nav class="navbar navbar-fixed-top navbar-inverse" id="nav">
-  <!-- Button that allows for collapsing views rendered far right (is hidden with
-  media queries) -->
-  <button type="button" class="navbar-toggle" id="collapse-btn" data-toggle="collapse" data-target="#links">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-  </button>
-  <div class="container-fluid">
-    <div class="navbar-header hvr-grow" >
-      <!-- Logo held far left with navbar-header -->
-      <img id="logo" src="http://www.placehold.it/110x70"></img>
-    </div>
-    <!-- right side, contains contact, github, divider -->
-    <ul class="nav navbar-nav navbar-right " id ="right-nav">
-      <li class="hvr-grow" id="cus"><a href="#" style="color: white;">Contact Us</a></li>
-      <li id="div"> <img src="http://www.placehold.it/1x15"> </li>
-      <li class="hvr-grow" id="gh"><a href="#"><span class="fa fa-github fa-4x" id="gh-icon"></span></a></li>
-    </ul>
-  </div> <!-- end right side, contains contact, github, divider -->
-  <!-- Hidden links for the collapsing button show using jquery -->
-  <ul id="links">
-    <li class="btn btn-lg">Contact Us </li>
-    <li class="btn btn-lg">GitHub </li>
-  </ul> <!-- end hidden links -->
-</nav>
 <body>
+  <nav class="navbar navbar-fixed-top navbar-inverse" id="nav">
+    <!-- Button that allows for collapsing views rendered far right (is hidden with
+    media queries) -->
+   
+    <div class="container-fluid">
+
+      <div class="navbar-header hvr-grow" >
+
+         <button type="button" class="navbar-toggle" aria-expanded=false toggle="collapse" id="collapse-btn" data-toggle="collapse" data-target="#right-group">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+
+        <!-- Logo held far left with navbar-header -->
+        <img id="logo" src="http://www.placehold.it/110x70"></img>
+      </div>
+
+      <!-- right side, contains contact, github, divider -->
+      <div class="collapse navbar-collapse" id="right-group">
+        <ul class="nav navbar-nav navbar-right ">
+          <li class="hvr-grow" id="cus"><a href="#" "><p class="navbar-text" style="color:white">Contact Us</p></a></li>
+          <li id="div"> <img src="http://www.placehold.it/1x15"> </li>
+          <li class="hvr-grow" id="gh"><a href="#"><span class="fa fa-github fa-4x" id="gh-icon"></span></a></li>
+        </ul>
+      </div>
+
+    </div> <!-- end right side, contains contact, github, divider -->
+    <!-- Hidden links for the collapsing button show using jquery -->
+   <!--  <ul id="links">
+      <li class="btn btn-lg">Contact Us </li>
+      <li class="btn btn-lg">GitHub </li>
+    </ul> --> <!-- end hidden links -->
+  </nav>
+
 </body>
 </html>

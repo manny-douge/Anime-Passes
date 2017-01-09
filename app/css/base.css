@@ -19,33 +19,27 @@ body
 }
 #cus /* cotnact us */
 {
-  font-size: 1.4em;
+  /*font-size: 1.4em;
   position: relative;
   top: 1em;
   white-space: nowrap;
-  margin-right: 40px;
+  margin-right: 40px;*/
 }
 #div
 {
-  position: relative;
-  top: 2.5em;
+  /*position: relative;
+  top: 2.5em;*/
 }
 #gh
 {
-  margin-left: 50px;
-  margin-right: 80px;
+  /*margin-left: 50px;
+  margin-right: 80px;*/
 }
 #gh-icon
 {
   color:white;
 }
-#collapse-btn
-{
-  /*margin-top: 17px;
-  transform: scale(1.3);
-  background-color: #2a2e38;
-  border-color: #2A2E38;*/
-}
+
 #right-nav
 {
   color:white;
