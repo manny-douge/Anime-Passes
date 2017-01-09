@@ -2,7 +2,6 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title> Anime Passes</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
@@ -21,23 +20,23 @@
 
     <div class="container-fluid">
 
-      <div class="navbar-header" >
+      <div class="navbar-header hvr-grow" >
 
-         <button type="button" class="navbar-toggle" id="collapse-btn" data-toggle="collapse" data-target="#right-group">
+         <button type="button" class="navbar-toggle" aria-expanded=false toggle="collapse" id="collapse-btn" data-toggle="collapse" data-target="#right-group">
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
 
         <!-- Logo held far left with navbar-header -->
-        <img id="logo" class="hvr-grow" src="http://www.placehold.it/110x70"></img>
+        <img id="logo" src="http://www.placehold.it/110x70"></img>
       </div>
 
       <!-- right side, contains contact, github, divider -->
       <div class="collapse navbar-collapse" id="right-group">
         <ul class="nav navbar-nav navbar-right ">
-          <li class="hvr-grow"><a href="#"><p class="navbar-text" id="nav-text" style="color:white">Contact Us</p></a></li>
-          <li class="hidden-xs"> <img src="http://www.placehold.it/1x15" id="div"> </li>
+          <li class="hvr-grow"><a href="#"><p class="navbar-text" style="color:white">Contact Us</p></a></li>
+          <li> <img src="http://www.placehold.it/1x15"> </li>
           <li class="hvr-grow"><a href="#"><span class="fa fa-github fa-4x"></span></a></li>
         </ul>
       </div>
