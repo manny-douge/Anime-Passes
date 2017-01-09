@@ -1,0 +1,47 @@
+/* Hides the collapsing links until mobile resolution */
+@media screen and (min-width: 776px)
+{
+  #links
+  {
+    display:none !important;
+  }
+}
+/* Hide the github icon, divider, and contact us till dekstop resolutionx*/
+@media screen and (max-width: 775px)
+{
+  #div, #cus, #gh
+  {
+    display:  none;
+  }
+  #links
+  {
+    width:40%;
+
+    list-style:none;
+    position: fixed;
+    top: 54px;
+    right: 9px;
+    text-align:center;
+    padding-left: 0;
+  }
+  #links .btn
+  {
+    display: block;
+    border-bottom-color: DarkGray;
+    background-color:#2c313d;
+  }
+}
+/*This set specifically targets the mobile resolution, the above css handles the
+  styles until we reach it */
+@media screen and (max-width: 530px)
+{
+  #nav
+  {
+    height: 70px;
+  }
+  #logo
+  {
+    padding-top: 0px;
+    transform: scale(.8);
+  }
+}
