@@ -44,6 +44,11 @@
 
     </div>
   </nav>
-	<div class="promo"></div>
+<<<<<<< HEAD
+<p>Some text that wont get overwritten</p>
+=======
+  <div class="promo">
+  </div>
+>>>>>>> 0ac7563beac0bd36f6cc0fa618994033bf819caa
 </body>
 </html>

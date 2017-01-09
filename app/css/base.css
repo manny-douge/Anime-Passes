@@ -6,6 +6,9 @@ body
   color: #FFF;
   padding-top: 6em;
   font-family: 'Roboto', sans-serif;
+  padding-top: 6em;
+  padding-left: 5em;
+  padding-right: 5em;
 }
 
 #nav
@@ -18,24 +21,7 @@ body
 {
   padding-top: 6px;
 }
-#cus /* cotnact us */
-{
-  /*font-size: 1.4em;
-  position: relative;
-  top: 1em;
-  white-space: nowrap;
-  margin-right: 40px;*/
-}
-#div
-{
-  /*position: relative;
-  top: 2.5em;*/
-}
-#gh
-{
-  /*margin-left: 50px;
-  margin-right: 80px;*/
-}
+
 #gh-icon
 {
   color:white;
@@ -44,5 +30,12 @@ body
 #right-nav
 {
   color:white;
-
+}
+.promo
+{
+  background-color: blue;
+  display: block;
+  width: 60em;
+  margin-left: auto;
+  margin-right: auto;
 }
