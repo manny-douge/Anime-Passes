@@ -6,9 +6,6 @@ body
   color: #FFF;
   padding-top: 6em;
   font-family: 'Roboto', sans-serif;
-  padding-top: 6em;
-  padding-left: 5em;
-  padding-right: 5em;
 }
 
 #nav
@@ -33,11 +30,36 @@ body
 {
   color:white;
 }
-.promo
+#main-content
 {
-  background-color: blue;
-  display: block;
-  width: 60em;
+  margin-top: 2.5em;
+  background-color: white;
+  color: #2a2e38;
+  height: 20em;
+  margin-left: 8.3%;
+  margin-right: 8.3%;
+  border-radius: 15px;
+}
+div h2
+{
+  font-weight: 200;
+  font-size: 3em;
+  margin-top: 3em;
+}
+div h2::after
+{
+  content: url("../img/promo-bar.png");
+  position: fixed;
+  width: 80%;
+  left: 1em;
+  z-index: -1;
+}
+div h4
+{
+  width: 80%;
   margin-left: auto;
   margin-right: auto;
+  font-weight: 100;
+  font-size: 1.2em;
+  font-style: italic;
 }
