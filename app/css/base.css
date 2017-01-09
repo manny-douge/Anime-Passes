@@ -2,8 +2,8 @@
 body
 {
   background-color: #2a2e38;
-  height: 700px;
-  color: #FFF;
+  min-height: 700px;
+  color: #F9FBFF;
   padding-top: 6em;
   font-family: 'Roboto', sans-serif;
 }
@@ -21,25 +21,33 @@ body
 
 
 
-#gh-icon
-{
-  color:white;
+.fa-github {
+  color: #F9FBFF;
+
 }
+
+
+
+
 
 #right-nav
 {
-  color:white;
+  color:#F9FBFF;
 }
 #main-content
 {
   margin-top: 2.5em;
-  background-color: white;
+  background-color: #F9FBFF;
+  border-color:   #F9FBFF;
   color: #2a2e38;
   height: 20em;
   margin-left: 8.3%;
   margin-right: 8.3%;
   border-radius: 15px;
 }
+
+
+
 div h2
 {
   font-weight: 200;
