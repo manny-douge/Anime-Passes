@@ -19,6 +19,11 @@ body
   padding-top: 6px;
 }
 
+#collapse-btn {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
 
 
 .fa-github {
