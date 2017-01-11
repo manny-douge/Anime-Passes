@@ -1,0 +1,42 @@
+@media screen and (max-width: 768px) {
+  #main-content
+  {
+    height: auto;
+  }
+  .mc-item
+  {
+    width: auto;
+  }
+  #divider
+  {
+    width: 190px;
+    height: 2px;
+    margin-bottom: 30px;
+  }
+  #donate
+  {
+    width: 100%;
+  }
+  #donate-input
+  {
+    font-size: 1.4em;
+  }
+  body {
+    padding-top: 12em;
+  }
+
+  ul > li:not(:last-child) {
+    border-right: none;
+    border-bottom: ridge;
+    border-color: #D8E2FF;
+  }
+
+  .menu-solid {
+    background-color: #1f2229;
+  }
+
+  .fa-github::after {
+    content: " Github";
+    font-size: 50px;
+  }
+}
