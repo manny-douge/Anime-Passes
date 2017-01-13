@@ -13,7 +13,7 @@ class CustomForm extends Component {
 
   handleChange(event) {
     this.setState({
-      value: String(event.target.value).trim()
+      value: String(event.target.value).trim().toUpperCase()
     });
   }
 
