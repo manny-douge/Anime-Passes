@@ -23,7 +23,9 @@ body
   margin-bottom: 20px;
 }
 
-
+.navbar-text {
+  color: white;
+}
 
 .fa-github {
   color: #F9FBFF;
