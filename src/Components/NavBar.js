@@ -18,7 +18,7 @@ function NavBar() {
   const rightGroup = (
     <div className="collapse navbar-collapse menu-solid" id="right-group">
       <ul className="nav navbar-nav navbar-right">
-        <li><a href="#"><p className="navbar-text" id="nav-text">Contact Us</p></a></li>
+        <li><a href="#"><p className="navbar-text hvr-grow" id="nav-text">Contact Us</p></a></li>
         <li><a href="#"><i className="fa fa-github fa-4x hvr-grow"></i></a></li>
       </ul>
     </div>
