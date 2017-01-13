@@ -58,7 +58,7 @@ body
 #main-content  p
 {
   font-weight: 300;
-  font-size: 100%;
+  font-size: 1.2em;
   font-style: italic;
 }
 /*proper margins for items within main-content (donate and request)*/
@@ -80,6 +80,9 @@ body
   padding: .45em;
   font-size: 1.5em;
   box-sizing: border-box;
+}
+.mc-text {
+  height: 9em;
 }
 .mc-btn:hover
 {
@@ -127,4 +130,7 @@ b
   box-shadow: inset 0 -2px 1px rgba(0.9,0,0,0.09);
   font-weight: 100;
   text-align: center;
+}
+#request-btn {
+  margin-top: 3em;
 }

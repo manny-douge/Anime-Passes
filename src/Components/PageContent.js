@@ -20,8 +20,10 @@ function PageContent() {
 
   const donateDiv = (
     <div className="col-md-5 col-sm-5 col-xs-12 mc-item text-center" id="donate">
-    <p>All Guest Passes be verified for authenticity upon submission.</p>
-    <p>Don't worry about submitting passes you're unsure about <b>:-)</b>.</p>
+    <div className="mc-text">
+      <p>All Guest Passes be verified for authenticity upon submission.</p>
+      <p>Don't worry about submitting passes you're unsure about <b>:-)</b>.</p>
+    </div>
     <CustomForm buttonType="donate"/>
 
     </div>
@@ -29,13 +31,14 @@ function PageContent() {
 
   const requestDiv = (
     <div className="col-md-5 col-sm-2 col-xs-12 mc-item">
-    <p>Anime Passes is supported by the <b>Anime and Crunchyroll communities</b>, all
-    guest passes given have been donated by another user.</p>
-    <p>
-    As such, there is a 48 hour restriction after each successful acquisition
-    of a Guest Pass.
-    </p>
-    <p><b>Please be respectful</b>.</p>
+      <div className="mc-text">
+        <p>Anime Passes is supported by the <b>Anime and Crunchyroll communities</b>, all
+        guest passes given have been donated by another user.<br/>
+        As such, there is a 48 hour restriction after each successful acquisition
+        of a Guest Pass.
+        </p>
+        <p><b>Please be respectful</b>.</p>
+    </div>
     <CustomForm buttonType="request"/>
     </div>
 
