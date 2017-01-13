@@ -14,7 +14,7 @@ function PageContent() {
     <h4>Anime Passes seeks to ease the hassle of finding a Crunchyroll Guest
     Pass, whether you're someone who's subscription has run out or someone
     just wanting to get their hands on an account.
-    </h4>
+  </h4>
     </div>
   );
 

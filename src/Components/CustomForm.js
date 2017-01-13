@@ -34,13 +34,13 @@ class CustomForm extends Component {
       <form onSubmit={this.handleSubmit} style={{color:"black"}}>
       {buttonType==="donate" ? (
         <div>
-          <input value={this.state.value} onChange={this.handleChange} /><br />
-          <input type="submit" value ="Donate" type="submit" className="btn mc-btn"/>
+          <input placeholder="GUEST PASS CODE" value={this.state.value} onChange={this.handleChange} id="donate-input" /><br />
+          <input type="submit" value ="Donate" type="submit" className="btn mc-btn hvr-grow"/>
 
         </div>
       ):
       (
-        <input value ="Request" type="submit" className="btn mc-btn"/>
+        <input value ="Request" type="submit" className="btn mc-btn hvr-grow"/>
       ) }
       </form>
     )
