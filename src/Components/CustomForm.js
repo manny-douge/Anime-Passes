@@ -19,8 +19,8 @@ class CustomForm extends Component {
 
   handleSubmit(event) {
     let value = this.state.value;
-    if ((this.props.buttonType === "donate") && value !== "") {
-      alert("You submitted a Code, " + this.state.value)
+    if ((this.props.buttonType === "donate") && value.length === 9) {
+      alert("You submitted a Code, " + value)
     } else if (this.props.buttonType === "request") {
       alert("You requested a Code")
     }
