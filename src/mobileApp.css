@@ -35,9 +35,15 @@
     background-color: #1f2229;
   }
 
+  .navbar-text {
+    font-size: 4.5vh;
+  }
+
   .fa-github::after {
     content: " Github";
-    font-size: 50px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 5vh;
+    font-weight: 500;
   }
 }
 

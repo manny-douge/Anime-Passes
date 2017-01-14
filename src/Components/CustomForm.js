@@ -35,7 +35,7 @@ class CustomForm extends Component {
       {buttonType==="donate" ? (
         <div>
           <input id="donate-input" maxLength="11" placeholder="Guest Pass Code" value={this.state.value} onChange={this.handleChange} />
-          <input type="submit" value ="Donate" type="submit" className="btn mc-btn hvr-grow"/>
+          <input type="submit" value ="Donate" type="submit" className="btn mc-btn hvr-grow" required />
 
         </div>
       ):

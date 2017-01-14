@@ -86,8 +86,9 @@ body
 }
 .mc-text {
   height: 9em;
+
 }
-.mc-btn:hover
+.mc-btn:hover, .mc-btn:focus
 {
   color: #F9FBFF;
 }
@@ -135,6 +136,11 @@ b
   text-align: center;
   text-overflow: ellipsis;
 }
+#donate-input:focus {
+  background-color: #D8E2FF;
+  color: #263868;
+}
+
 #request-btn {
   margin-top: 3em;
 }
