@@ -46,3 +46,9 @@
     font-size: 99%;
   }
 }
+/* target generic mobile */
+@media screen and (max-width: 530px) {
+  #main-content  p{
+    font-size: 96%;
+  }
+}
