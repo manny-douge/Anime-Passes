@@ -144,3 +144,33 @@ b
 #request-btn {
   margin-top: 3em;
 }
+
+#request-ldr {
+  position: relative;
+  top: 55px;
+}
+
+/*spinning loader css*/
+.loader {
+  border: 16px solid gray;
+  border-radius: 50%;
+  border-top: 16px solid #263868;
+  width: 4em;
+  height: 4em;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+  display: none;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

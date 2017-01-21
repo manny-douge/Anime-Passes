@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import $ from 'jquery'
 
 class CustomForm extends Component {
   constructor(props) {
@@ -19,10 +20,32 @@ class CustomForm extends Component {
 
   handleSubmit(event) {
     let value = this.state.value;
-    if ((this.props.buttonType === "donate") && value.length === 9) {
-      alert("You submitted a Code, " + value)
+    if ((this.props.buttonType === "donate") && value.length === 11) {
+      //hide button show loader
+      $("#donate-btn").toggle()
+      $("#donate-ldr").toggle()
+      $.get(`http://localhost:3030/donate?gp=${value}`, function(data, status) {
+        if (status === "success") {
+          // console.log("Success receiving data.")
+          $("#donate-btn").toggle()
+          $("#donate-ldr").toggle()
+          $("#donate-input").text("")
+          $("#donate-input").focus()
+          alert("Thanks!")
+        }
+      })
     } else if (this.props.buttonType === "request") {
-      alert("You requested a Code")
+      $("#request-btn").toggle()
+      $("#request-ldr").toggle()
+      $("#code").text("This may take a few moments...")
+      $.get(`http://localhost:3030/request?${value}`, function(data, status) {
+        if (status === "success") {
+          // console.log("Success receiving data.")
+          $("#request-btn").toggle()
+          $("#request-ldr").toggle()
+          $("#code").text(data)
+        }
+      })
     }
     event.preventDefault();
   }
@@ -35,12 +58,16 @@ class CustomForm extends Component {
       {buttonType==="donate" ? (
         <div>
           <input id="donate-input" maxLength="11" placeholder="Guest Pass Code" value={this.state.value} onChange={this.handleChange} />
-          <input type="submit" value ="Donate" type="submit" className="btn mc-btn hvr-grow" required />
+          <div id="donate-ldr" className="loader"></div>
+          <input id="donate-btn" type="submit" value ="Donate" type="submit" className="btn mc-btn hvr-grow" required />
 
         </div>
       ):
       (
+        <div>
+        <div id="request-ldr" className="loader"></div>
         <input id="request-btn" value ="Request" type="submit" className="btn mc-btn hvr-grow"/>
+        </div>
       ) }
       </form>
     )

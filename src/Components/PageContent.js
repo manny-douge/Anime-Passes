@@ -21,7 +21,7 @@ function PageContent() {
   const donateDiv = (
     <div className="col-md-5 col-sm-5 col-xs-12 mc-item text-center" id="donate">
     <div className="mc-text">
-      <p>All Guest Passes be verified for authenticity upon submission.</p>
+      <p>All Guest Passes will be verified for authenticity upon submission.</p>
       <p>Don't worry about submitting passes you're unsure about <b>:-)</b>.</p>
     </div>
     <CustomForm buttonType="donate"/>
@@ -37,7 +37,7 @@ function PageContent() {
         As such, there is a 48 hour restriction after each successful acquisition
         of a Guest Pass.
         </p>
-        <p><b>Please be respectful</b>.</p>
+        <p><b id="code">Please be respectful</b>.</p>
     </div>
     <CustomForm buttonType="request"/>
     </div>
